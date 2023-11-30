@@ -1,0 +1,14 @@
+html,body{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.App , #root{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* gallery carousel thumbnail setting */
+._-cAh3 img{
+    object-fit: contain;
+}
