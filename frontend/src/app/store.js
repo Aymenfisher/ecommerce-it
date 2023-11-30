@@ -17,5 +17,6 @@ export const store = configureStore({
         cart:cart,
         orders:orders,
         inbox:inbox
-    }
+    },
+    devTools:false
 })

@@ -8,8 +8,11 @@ import './index.css'
 import { ThemeProvider } from '@emotion/react'
 import { storeTheme } from './storeTheme'
 import ScrollToTop from './components/common/ScrollToTop/ScrollToTop'
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 
-
+if(process.env.NODE_ENV === 'production'){
+  disableReactDevTools()
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
