@@ -38,7 +38,7 @@ const login = async (req, res) => {
         // getting the requested user 
         const user = await User.login(body.username, body.password)
         //generating token:
-        const token = createToken({ role: user.role, username: user.username }, body.keepSigned)
+        const token = createToken({ role: user.role, username: user.username,firstName:user.firstName,lastName:user.lastName }, body.keepSigned)
         // return token
         return res
             .status(200)
